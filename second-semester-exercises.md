@@ -40,3 +40,59 @@ Submit the output of:
 - [ ] git remote -v
 - [ ] git log
 
+## [Exercise]() 6
+### Task: 
+* Review the CIS benchmark for ubuntu, and try to implement at least 10 of the recommendations that we made within the benchmark.
+
+### Instruction:
+  -  N/A
+
+## [Exercise]() 7
+
+### Task:
+
+* Create a bash script to run at every hour, saving system memory (RAM) usage to a specified file and at midnight it sends the content of the file to a specified email address, then starts over for the new day.
+
+### Instruction:
+
+- [ ] Submit the content of your script, cronjob and a sample of the email sent, all in the folder for this exercise.
+
+## [Exercise]() 8
+
+### Task:
+* Create an Ansible Playbook to setup a server with Apache
+* The server should be set to the Africa/Lagos Timezone
+* Host an index.php file with the following content, as the main file on the server:
+```php
+<?php
+date_default_timezone_set('Africa/Lagos');
+echo date("F d, Y h:i:s A e", time());
+?>
+```
+
+### Instruction:
+- [ ] Submit the Ansible playbook, the output of `systemctl status apache2` after deploying the playbook and a screenshot of the rendered page
+
+## [Exercise]() 9
+
+### Task:
+
+> 193.16.20.35/29
+
+* What is the Network IP, number of hosts, range of IP addresses and broadcast IP from this subnet?
+
+### Instruction: 
+- [ ] Submit all your answer as a markdown file in the folder for this exercise.
+
+
+# MINI PROJECT ([Exercise]() 10)
+
+We will be deploying a real life application:
+- Demo Project: https://github.com/f1amy/laravel-realworld-example-app
+- Setup Debian 11 on a virtual machine instance with a cloud provider or as instructed
+- Setup Apache with every dependency the application needs to run
+- Don't use Laravel Sail or Docker as suggested in the project README file, simple clone the project with Git and deploy with Apache
+- Setup MySQL with credentials and a database for your aplication to use
+- Configure a subdomain if you have a domain name to point the VM instance or speak to an instructor for further guide
+- You have completed the project if you are able to view the application according to the specifications in the project from your Host browser
+
